@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Electron test app</title>
+</head>
+<body>
+  	<h1>This is my first electron application</h1>
+    <div id="node-id"></div>
+    
+  <script>
+      // Obtain the element where the HTML will be inserted
+      const container = document.getElementById('node-id');
+      
+      // Create new text element
+      let message = document.createElement("span");
+      message.innerText = " This is a inserted text span";
+
+      // Create new image element
+      let image = document.createElement("div");
+      image.style.backgroundColor = "blue";
+      image.style.width= "150px";
+      image.style.height= "150px";
+      
+      // Append the text element to the div
+      container.appendChild(message);
+      // Append the image elemnent to the div
+      container.appendChild(image);
+    </script>
+</body>
+</html>
